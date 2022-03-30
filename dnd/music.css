@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+#film {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#buttons {
+    width: 464px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.musicset h2 {
+    color: white;
+    background-color: transparent;
+    font-family: Papyrus, fantasy, sans-serif;
+}
+
+.setbuttons {
+    width: 100%;
+}
+.setbuttons > button {
+    width: 110px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    background-color: transparent;
+    font-family: Papyrus, fantasy, sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 10px 0 0 4px;
+    box-sizing: border-box;
+}
+
+.settitle {
+    width: 100%;
+}
+.settitle > h2 {
+    text-align: center;
+}
