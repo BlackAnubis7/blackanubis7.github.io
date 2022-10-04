@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hideaway light planner</title>
+    <link rel="stylesheet" href="lights.css">
+    <style></style>
+</head>
+<body>
+
+<div id="angle-setter">
+    <button class="angle-button" id="angle-45">&lt; 45</button>
+    <button class="angle-button" id="angle-5">&lt; 5</button>
+    <button class="angle-button" id="angle0">&gt;o&lt;</button>
+    <button class="angle-button" id="angle+5">5 &gt;</button>
+    <button class="angle-button" id="angle+45">45 &gt;</button>
+</div>
+<div id="compass-box">
+    <table class="compass pos-angle">
+        <tr>
+            <th></th>
+            <th colspan="3">
+                <div class="coord-label neg-angle">-Z</div>
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <th rowspan="3">
+                <div class="coord-label neg-angle">-X</div>
+            </th>
+            <td>
+                <button class="compass-button" id="nw">
+                    <div class="neg-angle">NW</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="n">
+                    <div class="neg-angle">N</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="ne">
+                    <div class="neg-angle">NE</div>
+                </button>
+            </td>
+            <th rowspan="3">
+                <div class="coord-label neg-angle">+X</div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <button class="compass-button" id="w">
+                    <div class="neg-angle">W</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="center">
+                    <div class="neg-angle">X</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="e">
+                    <div class="neg-angle">E</div>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="compass-button" id="sw">
+                    <div class="neg-angle">SW</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="s">
+                    <div class="neg-angle">S</div>
+                </button>
+            </td>
+            <td>
+                <button class="compass-button" id="se">
+                    <div class="neg-angle">SE</div>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="3">
+                <div class="coord-label neg-angle">+Z</div>
+            </th>
+            <th></th>
+        </tr>
+    </table>
+</div>
+<div id="coord-display">
+    <table>
+        <tr>
+            <th>X</th>
+            <th>Z</th>
+        </tr>
+        <tr>
+            <td>
+                <span class="coord-whole" id="coord-x">?</span>
+                <span class="coord-fraction" style="text-align: right">.50</span>
+            </td>
+            <td>
+                <span class="coord-whole" id="coord-z">?</span>
+                <span class="coord-fraction">.50</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script src="lights.js"></script>
+</body>
+</html>
