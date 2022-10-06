@@ -31,8 +31,8 @@ function updateCompassAngle(delta) {
 }
 
 function resetCoords() {
-    x = 0
-    z = 0
+    x = 57
+    z = 279
     displayCoords()
 }
 
