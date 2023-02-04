@@ -15,12 +15,6 @@ function randomBlock() {
     return ret
 }
 
-// function randomByteExcept(except) {
-//     let res = randInt(0xFE)
-//     if (res >= except) res++
-//     return res
-// }
-
 function random4bitWrapper(lowerBits) {
     return (Math.floor(Math.random() * 0x0F) << 4) + (lowerBits & 0x0F)
 }
@@ -308,7 +302,10 @@ const postText = document.getElementById('post-text')
 
 
 function setPostText(text) {
-    let sanitised = text.replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    let sanitised = text
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/\n/g, '<br>')
     postText.innerHTML = sanitised
 }
 
