@@ -1,0 +1,55 @@
+div {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin: 10px 0px;
+}
+
+#post {
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: large;
+}
+
+#pre-text {
+    resize: vertical;
+    width: 100%;
+}
+
+#post-text {
+    overflow-wrap: break-word;
+    word-break: break-all;
+    font-family: monospace;
+}
+
+.start-end {
+    user-select: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+    opacity: 50%;
+}
+
+#key-box {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#key-box > label {
+    font-size: larger;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+#key {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+#button-box > button {
+    font-size: larger;
+    margin: 0 10px 0 0;
+    padding: 5px;
+}

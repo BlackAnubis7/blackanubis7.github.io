@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jsaes.js"></script>
+</head>
+<body>
+
+    <div id="pre">
+        <textarea id="pre-text"></textarea>
+    </div>
+    <div id="key-box">
+        <label for="key">Key:</label><input type="text" id="key">
+    </div>
+    <div id="button-box">
+        <button id="encrypt">Encrypt</button>
+        <button id="decrypt">Decrypt</button>
+    </div>
+    <div id="post">
+        <span class="start-end">&#8594; &#8594; &#8594; </span>
+        <span id="post-text"></span>
+        <span class="start-end">&#8592; &#8592; &#8592; </span>
+    </div>
+
+<script type="text/javascript" src="engine.js"></script>
+</body>
+</html>
